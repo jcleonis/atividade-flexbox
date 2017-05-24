@@ -1,0 +1,71 @@
+@import "./src/components/bootstrap/scss/bootstrap.scss";
+.cx-format {
+    border: 1.5px solid;
+    border-color: #E0E0E0;
+    background-color: #EEEEEE;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5)
+}
+
+.header-menu {
+    @extend .d-flex;
+    @extend .flex-row;
+    .logo,
+    .menu {
+        @extend .cx-format;
+        @extend .p-4;
+        @extend .m-3;
+        line-height: 1rem;
+        text-align: center;
+    }
+    .logo {
+        flex-grow: 0.5;
+    }
+    .menu {
+        flex-grow: 3;
+    }
+}
+
+.art-blocos {
+    @extend .d-sm-flex;
+    @extend .flex-sm-column;
+    @extend .d-flex;
+    @extend .flex-row;
+    .art {
+        @extend .cx-format;
+        @extend .p-4;
+        @extend .m-3;
+        flex-grow: 2;
+    }
+}
+
+.art-chamativo {
+    @extend .cx-format;
+    @extend .d-flex;
+    @extend .flex-row;
+    @extend .m-3;
+    @extend .justify-content-between;
+    @extend .align-items-center;
+    .texto-chamativo {
+        font-size: 1.5em;
+        @extend .m-3;
+        @extend .p-2;
+    }
+    .link {
+        @extend .m-3;
+        @extend .p-2;
+    }
+}
+
+.rodape {
+    @extend .cx-format;
+    @extend .d-flex;
+    @extend .flex-row;
+    @extend .my-4;
+    @extend .mx-3;
+    @extend .p-3;
+    @extend .justify-content-center;
+    .texto-rodape {
+        @extend .m-2;
+        @extend .p-2;
+    }
+}

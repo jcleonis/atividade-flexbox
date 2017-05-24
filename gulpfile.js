@@ -3,6 +3,9 @@ var sass = require('gulp-sass');
 var htmlmin = require('gulp-htmlmin');
 var notify = require('gulp-notify');
 
+// var srcDirectoryBootstrap = './src/components/bootstrap/scss/*.scss';
+// var distDirectoryBootstrap = './src/scss';
+
 var srcDirectoryScss = './src/scss/style.scss';
 var distDirectoryCss = './dist/css';
 
@@ -11,6 +14,11 @@ var distDirectoryHtml = './dist';
 
 var watchDirectoryScss = './src/scss/**/*.scss';
 var watchDirectoryHtml = srcDirectoryHtml;
+
+// gulp.task('bootstrap', function() {
+//     return gulp.src(srcDirectoryBootstrap)
+//         .pipe(gulp.dest(distDirectoryBootstrap));
+// });
 
 gulp.task('scss', function() {
     return gulp.src(srcDirectoryScss)
@@ -35,6 +43,5 @@ gulp.task('project', function() {
     gulp.watch(watchDirectoryScss, ['scss']);
     gulp.watch(watchDirectoryHtml, ['html']);
 });
-
 
 gulp.task('default', ['scss', 'html']);
