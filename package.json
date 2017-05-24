@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/jcleonis/atividade-flexbox#readme",
   "devDependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "bower": "^1.8.0",
     "gulp": "^3.9.1",
     "gulp-htmlmin": "^3.0.0",
     "gulp-notify": "^3.0.0",

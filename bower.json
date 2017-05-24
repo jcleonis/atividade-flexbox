@@ -1,0 +1,14 @@
+{
+  "name": "atividadeflexbox",
+  "description": "Curso de Bootstrap Atividade de Flexbox",
+  "main": "index.js",
+  "authors": [
+    "Jonatas C Leonis"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/jcleonis/atividade-flexbox",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.6"
+  }
+}
